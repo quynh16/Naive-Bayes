@@ -64,6 +64,11 @@ To run the program from the command line:
 python3 naive_bayes.py [training_file_path] [test_file_path]
 ```
 
+## Sample Output
+
+Sample output for pendigits_training.txt and pendigits_test.txt
+![Sample output for pendigits_training.txt and pendigits_test.txt](https://github.com/quynh16/Naive-Bayes/blob/main/output.png?raw=true)
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
