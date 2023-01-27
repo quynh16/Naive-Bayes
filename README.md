@@ -4,7 +4,9 @@
 
 ## How It Works
 
-Using a Naive Bayes Classifier (instead of a true Bayes Classifier), we avoid the problem of finding a complex, high-dimensional probability function P(X_1, ..., X_d | C_k), where X_i is an attribute of object X, and C_k is a specific output class. 
+A true Bayes Optimal Classifier works by using Bayes Theorem to calculate conditional probabilities, which could then be used to make the most probable prediction for any given test object. However, because the Bayes Classifier requires the calculation of the probability function P(X_1, ..., X_d | C_k), where all attributes X_i of object X are all dependent on each other, and C_k is any output class, it is often infeasible implement in practice.
+
+However, by using a Naive Bayes Classifier (instead of a true Bayes Classifier), we avoid the problem of finding the complex, high-dimensional probability functions P(X_1, ..., X_d | C_k).
 
 To do this, we assume that each attribute within an object X is independent of each other, allowing us to first model each attribute with a separate probability P(X_i | C_k), and then apply the product rule to find the joint probability:
 
